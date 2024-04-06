@@ -1,0 +1,55 @@
+body{
+    text-align: center;
+    background-image: url(green.jpg);
+   
+    
+}
+.contenedor{
+    margin: 100px auto 0px;
+    width: 40%;
+    height: 80%;
+    margin-bottom: 50px;
+    border: 3px solid green;
+    flex-direction: column;
+    border-radius: 10px;
+    border-width: 100px;
+    background-color: white;
+    
+}
+
+.titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    
+}
+.datos{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    
+
+  
+    
+}
+#email{
+    background-color: rgb(80, 230, 100);
+    border-radius: 10px;
+   
+}
+#contraseña{
+   background-color: rgb(80, 230, 100);
+   border-radius: 10px;
+   
+}
+#nombre_usuario{
+    background-color: rgb(80, 230, 100);
+    border-radius: 10px;
+}
+#apellido_Usuario{
+    background-color: rgb(80, 230, 100);
+    border-radius: 10px;
+}
+#enviar:hover{
+    color: blue;
+}
+

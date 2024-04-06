@@ -1,0 +1,28 @@
+.titulo{
+    text-align: center;
+    margin-top: 200px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.conteiner{
+    display: flex;
+    justify-content: center;
+}
+.fecha{
+    text-align: center;
+    padding-top:30px;
+   
+}
+.Localidad{
+    justify-content: end;
+    padding-right: 100px;
+    padding-bottom: 20px ;
+}
+button:hover{
+    color: rgb(90, 240, 106);
+}
+a:hover{
+    color:rgb(90, 240, 106) ;
+}

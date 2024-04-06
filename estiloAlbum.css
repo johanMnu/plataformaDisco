@@ -1,0 +1,68 @@
+body{
+    background-image: url(green-day.jpg);
+    
+}
+
+.encabezado{
+    top: auto;
+   text-align: center;
+}
+.boton{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+.boton:hover{
+    color: rgb(90, 245, 105);
+}
+.items a {
+    position: static;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    border: solid 1px white;
+}
+ a:hover{
+    color: rgb(90, 245, 105);
+    background-color: transparent;
+}
+.contenedor{
+    background-color: black;
+    width: 10%;
+}
+
+.titulo{
+    margin-top: auto;
+    color: rgb(90, 245, 105);
+    padding-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+.nombre{
+    color:rgb(90, 245, 105);
+    font-size: 40px;
+    padding-top: 30px;
+}
+.año{
+    color:rgb(90, 245, 105);
+    font-size: 40px;
+}
+.Descripcion{
+    color:rgb(90, 245, 105);
+    font-size: 40px;
+}
+.contenedor h2{
+    color: white;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+span{
+    position: relative;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    border: solid 1px white;
+}
+
+
