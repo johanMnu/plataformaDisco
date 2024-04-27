@@ -7,16 +7,22 @@
     <title>Tours</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="tours.css">
+    <script src="https://kit.fontawesome.com/45b589e662.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    
+    <span id="welcome">Bienvenido</span>
     <h1 class="titulo">Tour y Fechas</h1>
     <div class="flex justify-evenly  text-2xl  bg-lime-300 mt-8 pt-1.5">
 
 
         <div>10 de Mayo</div>
         <div>Buenos Aires , ARG</div>
-        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 "><button>SoldOut</button>
+        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 ">
+            <button class="botonn" onclick="getTickets(true,'Buenos Aires,Argentina',2,'bsa')">
+                Comprar Entrada
+            </button>
         </div>
 
 
@@ -26,64 +32,91 @@
     <div class="flex justify-evenly  text-2xl  bg-lime-300 mt-8 pt-1.5">
         <div>13 de Mayo </div>
         <div> Tijuana, MX </div>
-        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 "><button>Tickets</button>
+        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 ">
+        <button class="botonn" onclick="getTickets(true,'Tijuana,Mexic',1,'mx')">
+            Comprar Entrada
+        </button>
         </div>
 
     </div>
     <div class="flex justify-evenly  text-2xl  bg-lime-300 mt-8 pt-1.5">
         <div>20 de Mayo </div>
         <div> La paz, Bolivia </div>
-        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 "><button>Tickets</button>
+        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 ">
+            <button class="botonn" onclick="getTickets(true,'La paz,Bolivia',5,'bol')">
+                Comprar Entrada
+            </button>
         </div>
 
     </div>
     <div class="flex justify-evenly  text-2xl  bg-lime-300 mt-8 pt-1.5">
         <div> 25 de Mayo </div>
         <div> Santiago de Chile, Chile </div>
-        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 "><button>Sold Out</button>
+        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 ">
+            <button class="botonn" onclick="getTickets(true,'Chile',5,'chile')">
+                Comprar Entrada
+            </button>
         </div>
 
     </div>
     <div class="flex justify-evenly  text-2xl  bg-lime-300 mt-8 pt-1.5">
-        <div>10 de junio </div>
+        <div >10 de junio </div>
         <div> California, USA </div>
-        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 "><button>Tickets</button>
+        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 ">
+            <button class="botonn" onclick="getTickets(false,'California,USA',5,'calif')">
+                Comprar Entrada
+            </button>
         </div>
 
     </div>
     <div class="flex justify-evenly  text-2xl  bg-lime-300 mt-8 pt-1.5">
         <div>11 de junio </div>
         <div> Los Angeles, USA</div>
-        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 "><button>Sold Out</button>
+        <div class=" text-white bg-slate-300 border-solid border-inherit border-red-800 ">
+            <button class="botonn" onclick="getTickets(true,'Los Angeles,USA',5,'LA')">
+                Comprar Entrada
+            </button>
         </div>
 
     </div>
     <div class="flex justify-evenly  text-2xl  bg-lime-300 mt-8 pt-1.5">
         <div>12 de junio </div>
         <div> New York, USA </div>
-        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 "><button>Sold Out</button>
+        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 ">
+            <button class="botonn" onclick="getTickets(true,'New York,USA',1,'NY')">
+                Comprar Entrada
+            </button>
         </div>
 
     </div>
     <div class="flex justify-evenly  text-2xl  bg-lime-300 mt-8 pt-1.5">
         <div>13 de junio </div>
-        <div> Miami, USA </div>
-        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 "><button>Sold Out</button>
+        <div id="miami"> Miami, USA </div>
+        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 ">
+            <button  class="botonn" onclick="getTickets(true,'Miami,USA') " >
+                Comprar Entrada
+            </button>
         </div>
 
     </div>
     <div class="flex justify-evenly  text-2xl  bg-lime-300 mt-8 pt-1.5">
         <div>1 de julio </div>
         <div> Barcelona, España </div>
-        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 "><button>Tickets</button>
+        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 ">
+            <button class="botonn" onclick="getTickets(false,'Barcelona,España',8,'bar')">
+                Comprar Entrada
+            </button>
         </div>
 
     </div>
 
     <div class="flex justify-evenly  text-2xl  bg-lime-300 mt-8 pt-1.5">
         <div>2 de julio </div>
-        <div> Madrid, España </div>
-        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 "><button>Tickets</button>
+        <div id="Madrid"> Madrid, España </div>
+        <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 ">
+            <button class="botonn" onclick="getTickets(true,'Madrid,España',2,'madrid')">
+                Comprar Entrada
+            </button>
         </div>
 
     </div>
@@ -110,6 +143,11 @@
         </div>
 
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+    <script src="tours.js"></script>
+    
+    
 </body>
 
 </html>

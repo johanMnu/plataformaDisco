@@ -12,10 +12,10 @@
     <div class="encabezado">
         <h1 class="titulo">Nueva Cancion</h1>
         <div>
-    <form action="" method="post">
-        <label for="" class="nombre">Titulo <br></label><br><input type="text" name="Titulo" id="Album"><br>
-        <label for="" class="año">Duracion<br></label><br><input type="number" name="Duracion" ><br><br><br>
-        <label for="" class="Descripcion">Links de youtube <br></label><br><input placeholder="Complete con una URL" type="text" ></label><br>
+    <form action="" method="post" id="form">
+        <label for="" class="nombre">Titulo <br></label><br><input type="text" name="Titulo" id="titulo"><br>
+        <label for="" class="año">Duracion<br></label><br><input type="number" name="Duracion" id="duracion" ><br><br><br>
+        <label for="" class="Descripcion">Links de youtube <br></label><br><input placeholder="Complete con una URL" type="text" id="link" ></label><br>
         <br><br>
         <input type="submit" name="Enviar" class="boton cursor-pointer">
         <input type="reset" name="Cancelar" value="Cancelar" class="cancelar cursor-pointer">
@@ -46,5 +46,7 @@
     </div> 
 
 </div> 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+<script src="addsong.js"></script>
 </body>
 </html>

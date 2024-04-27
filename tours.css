@@ -26,3 +26,13 @@ button:hover{
 a:hover{
     color:rgb(90, 240, 106) ;
 }
+#welcome{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+.ticket{
+    display: block;
+    align-items: end;
+}

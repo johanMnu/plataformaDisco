@@ -36,21 +36,24 @@ body{
     margin-top: auto;
     color: rgb(90, 245, 105);
     padding-bottom: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
 }
 .nombre{
     color:rgb(90, 245, 105);
     font-size: 40px;
     padding-top: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .año{
     color:rgb(90, 245, 105);
     font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .Descripcion{
     color:rgb(90, 245, 105);
     font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .contenedor h2{
     color: white;
