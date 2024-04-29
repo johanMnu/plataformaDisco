@@ -6,6 +6,8 @@ while (nombre.length < 3) {
     }
 
 }
+let bienvenido = document.getElementById("nickname");
+bienvenido.textContent ="hola " + nombre;
 
 let edad = prompt("Ingrese su edad");
 let boton = document.querySelectorAll("button");
@@ -17,34 +19,38 @@ if (edad < 18) {
     });
 
 }
-let buton = document.querySelectorAll("button");
-function getTickets(noTickets, place, cantEntradas, lugar) {
-    if (noTickets) {
-        swal("Sold!", "You have tickets to the " + place +
+function getTickets( place) {
+    if (tickets[place]>0) {
+        tickets[place]--
+            swal("Sold!", "You have tickets to the " + place +
             " concert", "success");
 
+    }else if(tickets[place]==0){
+        disableSoldOutButton();
+        swal('lo sentimos','los tickets para ' + place + ' se agotaron','warining')
     }
 
-    let cantTickets = tickets[lugar];
-    let entradasRestantes = cantTickets - 1;
-    tickets[lugar] = entradasRestantes;
-    if (entradasRestantes == 0) {
-
-        swal(
-            "Oh no!",
-            "You are outta luck!, there are no more tickets for " +
-            place, "info",
-        );
-        console.log(tickets)
+    
         
 }
-}
+
 //5- Para aquellos lugares que ya no tienen tickets deberás crear una segunda función llamada disableSoldOutButtons que
 // recorra el objeto tickets y deshabilite el botón correspondiente a aquellas fechas ya agotadas.
-function disableSoldOutButton(boton){
+function disableSoldOutButton(){
+            for(let place in tickets){
+                if(tickets[place]==0){
+                    let buton = document.querySelectorAll(".botonn");
+                    buton.forEach(buton => {
+                        let place = buton.getAttribute("data-place");
+                        if(tickets[place]==0){
+                            buton.textContent = "Sold out";
+                            buton.disabled = true;
+                        }
+                    })
+                }
+            }
            
-                botonNuevo.disabled = true;
-                botonNuevo.textContent = "Sold Out"; }
+        }
 
 let tickets = {
     "bsa": 2,

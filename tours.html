@@ -20,7 +20,7 @@
         <div>10 de Mayo</div>
         <div>Buenos Aires , ARG</div>
         <div class=" text-white bg-slate-300 border-solid border-inherit border-gray-800 ">
-            <button class="botonn" onclick="getTickets(true,'Buenos Aires,Argentina',2,'bsa')">
+            <button class="botonn" data-place="bsa" onclick="getTickets('bsa')">
                 Comprar Entrada
             </button>
         </div>
@@ -126,7 +126,7 @@
     text-center bg-gray-900 flex-row">
         <div class="text-gray-100 text-xl">
 
-            <h2 class="italic  font-bold text-gray-200 text-[15px]ml-3 p-2.5 mt-1 flex items-center"><a href="./home.html">Johan Nuñez</a></h2>
+            <h2 class="italic  font-bold text-gray-200 text-[15px]ml-3 p-2.5 mt-1 flex items-center"><a href="./home.html" id="nickname">Johan Nuñez</a></h2>
             <div class="p-2.5 mt-1 flex items-center">
 
                 <h2 class=" italic  font-bold text-gray-200 text-[15px]ml-3 cursor-pointer"><a
