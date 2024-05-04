@@ -12,11 +12,12 @@
     <div class="encabezado">
         <h1 class="titulo">Nuevo Album</h1>
     <form action="" method="post">
-        <label for="" class="nombre">Titulo <br></label><br><input type="text" name="Titulo" id="Album"><br>
-        <label for="" class="año">Año de Lanzamiento <br></label><br><input type="date" name="Año" ><br>
-        <label for="" class="Descripcion">Descripcion <br></label><br><textarea name="Descripcion" id="Descripcion" cols="100" rows="20"></textarea><br>
+        <label for="" class="nombre">Titulo <br></label><br><input type="text" name="Titulo" id="titulo"><br>
+        <label for="" class="año">Año de Lanzamiento <br></label><br><input type="date" name="Año" id="año" ><br>
+        <label for="" class="Descripcion">Descripcion <br></label><br><textarea name="Descripcion" id="descripcion" cols="100" rows="20"></textarea><br>
         <label for="" ><input placeholder="Complete con una URL" type="text" ></label><br>
-        <input type="submit" name="Enviar" class="boton">
+        <button type="submit" class="boton" >Enviar</button>
+      
 
 
     </form>
@@ -46,7 +47,7 @@ text-center bg-gray-900 flex-row">
     </div>
 
 </div> 
- 
-   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+    <script src="addalbum.js"></script>
 </body>
 </html>

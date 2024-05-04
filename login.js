@@ -1,12 +1,19 @@
-let nombre = document.getElementById("nombre");
-let contraseña = document.getElementById("contraseña");
-let form = document.getElementById("form");
-form.addEventListener("submit", function(nForm){
-nForm.preventDefault();
-if(nombre.length == 0){
-    swal("Debe llenar el nombre")
+function validacion(){
+    let nombre = document.getElementById("nombre").value;
+    let contra = document.getElementById("contraseña").value;
+    if(nombre == "" || contra == "" ){
+        swal("por favor , completo todos los campos.");
+    }else{
+        swal("Iniciando Sesion!!")
+    }
 }
-if(contraseña.value.length < 6){
-    swal("la contraseña no puede ser tan corta ")
-}
+document.getElementById("contraseña").addEventListener("input", function(){
+    let pass = this.value;
+    let errorMsj=document.getElementById("mensajeError");
+    if(pass.length < 6){
+        errorMsj.style.display="block";
+    }else{
+        errorMsj.style.display="none";
+    }
+
 })

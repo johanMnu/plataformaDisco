@@ -52,4 +52,8 @@ body{
 #enviar:hover{
     color: blue;
 }
+#mensajeError{
+    margin-top :1px;
+    padding-left: 175px;
+}
 

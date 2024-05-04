@@ -13,8 +13,10 @@
     <div class="formulario">
     <form action="" method="post" id="form">
         <label for="" class="datos">Nombre de Usuario<input type="text" name="nombre" id="nombre"></label><br>
-        <label for="" class="datos">Contraseña :<input type="password" name="password" id="contraseña"></label><br> <br>
-        <input type="submit" name="Iniciar Sesion" id="enviar">
+        <label for="" class="datos">Contraseña :<input type="password" name="password" id="contraseña"></label>
+        <p id="mensajeError">La contraseña es demasiado corta</p><br><br>
+        <button type="button" onclick="validacion()" id="enviar">Iniciar sesion</button>
+        
     </form></div> <br> <br>
     <div>
         <p>¿Aun no sos miembro? <a href="../plataformaDisco/signUP.html">Registrate</a></p>

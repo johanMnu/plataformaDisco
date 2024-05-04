@@ -14,10 +14,7 @@ let boton = document.querySelectorAll("button");
 if (edad < 18) {
     swal("No puede comprar tickets " + " tienes " + edad + "necesitas ser mayor");
 
-    boton.forEach(function (botonNuevo) {
-        botonNuevo.disabled = true;
-    });
-
+    
 }
 function getTickets( place) {
     if (tickets[place]>0) {
@@ -27,7 +24,9 @@ function getTickets( place) {
 
     }else if(tickets[place]==0){
         disableSoldOutButton();
-        swal('lo sentimos','los tickets para ' + place + ' se agotaron','warining')
+        swal('lo sentimos','los tickets para ' + place + ' se agotaron','warning')
+        
+    
     }
 
     
@@ -61,7 +60,7 @@ let tickets = {
     "LA": 5,
     "NY": 1,
     "miami": 8,
-    "bar": 8,
+    "barcelona": 8,
     "madrid": 2
 
 };
