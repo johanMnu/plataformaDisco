@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="estiloLogin.css">
+    <link rel="stylesheet" href="./CSS/estiloLogin.css">
 </head>
 <body>
     <img src="green.jpg" alt="">
@@ -12,17 +12,18 @@
     <h3 class="titulo">Log In</h3>
     <div class="formulario">
     <form action="" method="post" id="form">
-        <label for="" class="datos">Nombre de Usuario<input type="text" name="nombre" id="nombre"></label><br>
-        <label for="" class="datos">Contraseña :<input type="password" name="password" id="contraseña"></label>
+        <label for="" class="nombre">Nombre de Usuario<input type="text" name="nombre" id="nombre"></label><br>
+        <label for="" class="datos">Contraseña :<input type="password" name="password" id="contrasena"></label>
         <p id="mensajeError">La contraseña es demasiado corta</p><br><br>
-        <button type="button" onclick="validacion()" id="enviar">Iniciar sesion</button>
+        <button type="button" id="enviar">Iniciar sesion</button>
         
     </form></div> <br> <br>
     <div>
-        <p>¿Aun no sos miembro? <a href="../plataformaDisco/signUP.html">Registrate</a></p>
+        <p>¿Aun no sos miembro? <a href="signUP.html">Registrate</a></p>
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
-   <script src="login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="./scripts/login.js"></script>
 </body>
 </html>

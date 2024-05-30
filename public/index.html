@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
     <title>Green Day</title>
-    <link rel="stylesheet" href="styleHome.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/styleHome.css" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/d6b943133b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -33,27 +33,41 @@
     <h1 class="discos">Albums</h1>
 
 <br><br><br>
-    <div class="pics">
-        <a href="./AmercianIdiot.html">
+    <div class=" mt-8 ml-40 inline-grid grid-cols-3 gap-4 grid grid-cols-2 gap-4 space-x-44 justify-items-center">
+        <div>
+
+         <!-- <a href="./AmercianIdiot.html">
             <img src="american.jpg" alt="Tape" class="imagenes" name="american" >
             american
-          </a>
-          <a href="dookie.html">
-            <img src="Dookie.jpg" alt="Tape" class="imagenes" name="dookie" >
-            dookie
-          </a>
-          <a href="Green_Day_-_21st_Century_Breakdown_cover.jpg">
-            <img src="Green_Day_-_21st_Century_Breakdown_cover.jpg" alt="Tape" class="imagenes" name="21" >
-            21st century
-          </a>
-          
+          </a> -->
+        </div>
+        <div>
+            <!-- <a href="dookie.html">
+                <img src=".Dookie.jpg" alt="Tape" class="imagenes" name="dookie" >
+                dookie
+              </a> -->
+        </div>
+          <div>
+            <!-- <a href="Green_Day_-_21st_Century_Breakdown_cover.jpg">
+                <img src="Green_Day_-_21st_Century_Breakdown_cover.jpg" alt="Tape" class="imagenes" name="21" >
+                21st century
+              </a> -->
+          </div>
+           
        
          
         
     </div>
     
-    
-    <div class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[200px] overflow-y-auto
+    <div class="container1 sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[200px] overflow-y-auto
+    text-center bg-gray-900 flex-row">
+        <div class="text-gray-100 text-xl justify-items-center">
+            <a id="addAlbum" href="#" class="italic  font-bold text-gray-200 text-[15px]ml-3 p-2.5 mt-1 flex items-center">Add Album</a>
+            <a id="tours" href="#" class="italic  font-bold text-gray-200 text-[15px]ml-3 p-2.5 mt-1 flex items-center">Tour dates</a>
+            <a id="logout" href="#" class="italic  font-bold text-gray-200 text-[15px]ml-3 p-2.5 mt-1 flex items-center">Log Out</a>
+        </div>
+    </div>
+    <!-- <div class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[200px] overflow-y-auto
     text-center bg-gray-900 flex-row">
         <div class="text-gray-100 text-xl">
 
@@ -71,9 +85,14 @@
 
         </div>
 
-    </div> 
-
-    <script src="Home.js"></script>
+    </div>  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+    <script src="./scripts/index.js"></script>
+    
+   
+    
+    
 </body>
 
 </html>

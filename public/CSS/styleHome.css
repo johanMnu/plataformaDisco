@@ -1,6 +1,6 @@
 body{
  
-    background-image: url(green-day2.jpg);
+    background-image: url(../img/green-day2.jpg);
     color: white;
 }
 
@@ -41,8 +41,9 @@ body{
     font-size: 50px;
     text-align: center;
     color: rgb(90, 230, 60);
+    
 }
-.pics{
+.pics {
     display: flex;
     justify-content: center;
     text-align: center;

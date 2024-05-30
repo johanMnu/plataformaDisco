@@ -1,4 +1,5 @@
 //alert("Bienvenido");
+
 let nombre = prompt("Ingrese su nombre").toUpperCase();
 while (nombre.length < 3) {
     if (nombre.length < 3) {
@@ -6,13 +7,16 @@ while (nombre.length < 3) {
     }
 
 }
-let bienvenido = document.getElementById("nickname");
-bienvenido.textContent ="hola " + nombre;
+// let bienvenido = document.getElementById("nickname");
+// bienvenido.textContent ="hola " + nombre;
 
 let edad = prompt("Ingrese su edad");
 let boton = document.querySelectorAll("button");
 if (edad < 18) {
     swal("No puede comprar tickets " + " tienes " + edad + "necesitas ser mayor");
+     boton.forEach(buton => {
+        buton.disabled = true;
+    });
 
     
 }
@@ -74,3 +78,14 @@ let tickets = {
 const span = document.getElementById("welcome");
 span.textContent = "Hola " + nombre;
 
+document.getElementById('home').addEventListener('click', function() {
+    window.location.href = 'index.html';
+  });
+  
+  document.getElementById('addAlbum').addEventListener('click', function() {
+    window.location.href = 'addAlbum.html';
+  });
+  document.getElementById('logout').addEventListener('click', function() {
+    window.location.href = 'login.html';
+  });
+  

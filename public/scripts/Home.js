@@ -1,8 +1,8 @@
 
-let nombre = prompt("Como es tu nombre?");
-let span = document.querySelector("#welcome");
-let bienvenido = document.getElementById("nickname");
-bienvenido.textContent ="hola " + nombre;
+//let nombre = prompt("Como es tu nombre?");
+//let span = document.querySelector("#welcome");
+//let bienvenido = document.getElementById("nickname");
+//bienvenido.textContent ="hola " + nombre;
 let favoritos = ["american", "dookie", "21"];
 function addFavoritos(favorites){
     const imgs = document.querySelectorAll("img");

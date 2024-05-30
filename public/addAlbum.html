@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/estiloAlbum.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container1 sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[200px] overflow-y-auto
+    text-center bg-gray-900 flex-row">
+        <div class="text-gray-100 text-xl justify-items-center">
+            <h2><a id="home" href="#" class="italic  font-bold text-gray-200 text-[15px]ml-3 p-2.5 mt-1 flex items-center">Home</a>
+            <a id="tours" href="#" class="italic  font-bold text-gray-200 text-[15px]ml-3 p-2.5 mt-1 flex items-center">Tour dates</a>
+            <a id="logout" href="#" class="italic  font-bold text-gray-200 text-[15px]ml-3 p-2.5 mt-1 flex items-center">Log Out</a>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="encabezado">
+        <h1 class="titulo">Nuevo Album</h1>
+    <form action="" method="post">
+        <label for="" class="nombre">Titulo <br></label><br><input type="text" name="Titulo" id="titulo"><br>
+        <label for="" class="año">Año de Lanzamiento <br></label><br><input type="number" name="Año" id="year" ><br>
+        <label for="" class="Descripcion">Descripcion <br></label><br><textarea name="Descripcion" id="descripcion" cols="100" rows="20"></textarea><br>
+        <label for="" ><input placeholder="Complete con una URL" type="text" id="portada"></label><br>
+        <button type="submit" class="boton" id="Btn">Agregar Album</button>
+        <button type="button" class="submit" id="cancelar">Cancelar</button>
+      
+
+
+    </form>
+
+</div>
+
+<!-- <div class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[200px] overflow-y-auto
+text-center bg-gray-900 flex-row">
+    <div class="text-gray-100 text-xl">
+
+        <h2 class="italic  font-bold text-gray-200 text-[15px]ml-3 p-2.5 mt-1 flex items-center" id="nickname">Johan Nuñez</h2>
+        <div class="p-2.5 mt-1 flex items-center">
+            
+            <h2 class=" italic  font-bold text-gray-200 text-[15px]ml-3 cursor-pointer"><a href="./home.html">Otros Albums</a></h2>
+        </div>
+        <div class="p-2.5 mt-1 flex items-center">
+            
+            <h2 class=" italic  font-bold text-gray-200 text-[15px]ml-3 cursor-pointer"><a href="./ADDsongs.html">Añadir Cancion</a></h2>
+        </div>
+        <div class="p-2.5 mt-1 flex items-center">
+            <h2 class=" italic font-bold text-gray-200 text-[15px]ml-3 cursor-pointer"><a href="./tours.html">Fechas de Giras</a></h2>
+        </div>
+        <div class="p-2.5 mt-1 flex items-center">
+            
+            <h2 class=" italic  font-bold text-gray-200 text-[15px]ml-3 cursor-pointer"><a href="./editsAlbums.html">Editar Cancion</a></h2>
+        </div>
+        <div class="p-2.5 mt-1 flex items-center">
+            <h2 class="italic font-bold text-gray-200 text-[15px]ml-3 cursor-pointer"><a href="./login.html">Cerrar Sesion</a></h2>
+        </div>
+
+    </div> -->
+
+</div> 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./scripts/addalbum.js"></script>
+</body>
+</html>

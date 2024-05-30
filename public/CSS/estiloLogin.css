@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background-image: url(green.jpg);
+    background-image: url(../img/green.jpg);
    
     
 }
@@ -36,7 +36,7 @@ body{
     border-radius: 10px;
    
 }
-#contraseña{
+#contrasena{
    background-color: rgb(80, 230, 100);
    border-radius: 10px;
    
@@ -45,7 +45,7 @@ body{
     background-color: rgb(80, 230, 100);
     border-radius: 10px;
 }
-#apellido_Usuario{
+#apellido{
     background-color: rgb(80, 230, 100);
     border-radius: 10px;
 }
