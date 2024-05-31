@@ -1,3 +1,7 @@
+
+
+app.use("/health", (req, res) => res.sendStatus(200));
+
 const express = require("express");
 const app = express();
 const PORT = 5000;
