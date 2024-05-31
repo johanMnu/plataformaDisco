@@ -1,7 +1,4 @@
 
-
-app.use("/health", (req, res) => res.sendStatus(200));
-
 const express = require("express");
 const app = express();
 const PORT = 5000;
@@ -22,6 +19,7 @@ mongoose.connect("mongodb+srv://johanboca:Juancruz1@cluster0.bfxqi8m.mongodb.net
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
+app.use("/health", (req, res) => res.sendStatus(200));
 app.use('/', routes)
 
 
