@@ -12,7 +12,7 @@ document.getElementById("logout").addEventListener("click", () => {
   window.location.href = "login.html";
 });
 document.getElementById("login").addEventListener("click", () => {
-  window.location.href = "login.html";
+  window.location.href = "signUp.html";
 });
 
 const getAlbums = async () => {
@@ -62,7 +62,7 @@ const renderAlbums = (album) => {
 
     const deleteIcon = document.createElement('span');
     deleteIcon.classList.add('cursor-pointer', 'ml-4');
-    deleteIcon.innerHTML = '<i class="fa fa-trash text-black-500"></i>';
+    deleteIcon.innerHTML = '<i class="fa fa-trash text-green-500"></i>';
 
     deleteIcon.addEventListener('click', function(){
       deleteAlbum(album._id, album.titulo);
