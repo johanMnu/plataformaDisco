@@ -139,7 +139,7 @@ document.getElementById("enviar").addEventListener("click", function(e){
     addSong();
 });
 
-document.getElementById("cancelar").addEventListener("click", function(e){
+document.getElementById("Cancelar").addEventListener("click", function(e){
     e.preventDefault();
     window.location.href = `./album.html?id=${albumId}`;
 });
