@@ -7,11 +7,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config(); // Cargar las variables de entorno desde el archivo .env
 
-app.use(cors());
-app.use(express.json());
-app.use(express.static(path.join(__dirname, "public")));
-app.use("/health", (req, res) => res.sendStatus(200));
-app.use("/", routes);
+
 mongoose
   .connect(
     `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${
@@ -25,7 +21,11 @@ mongoose
     console.log(err);
   });
 
-
+  app.use(cors());
+  app.use(express.json());
+  app.use(express.static(path.join(__dirname, "public")));
+  app.use("/health", (req, res) => res.sendStatus(200));
+  app.use("/", routes);
 app.listen(PORT, () => {
   console.log(`Iniciado server en puerto ${PORT}`);
 });
