@@ -25,15 +25,15 @@ router.put("/albumes/:id", async function(req,res){
 });
 
 router.put("/albumes/:id/canciones", async function(req, res){
-    //console.log("¿esta entrando?");
-    let disco = album.findById(req.params.id);
+    // console.log("¿esta entrando?");
+    let disco = Album.findById(req.params.id);
 
     const nuevaCancion = {
         titulo: req.body.titulo,
         duracion: req.body.duracion,
         youtubeLink: req.body.youtubeLink
 };
-    const updatedAlbum = await album.findByIdAndUpdate(req.params.id,{ $push: { canciones: nuevaCancion } });
+    const updatedAlbum = await Album.findByIdAndUpdate(req.params.id,{ $push: { canciones: nuevaCancion } });
     res.send("Cancion agregada al álbum");
 });
 
