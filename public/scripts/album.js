@@ -46,7 +46,7 @@ function renderAlbum(album){
     const albumToUse = response.data;
     renderAlbum(albumToUse);
     document.getElementById('addSongs').addEventListener('click', function() {
-      window.location.href = `/ADDSongs.html?albumId=${albumId}`;
+      window.location.href = `ADDSongs.html?albumId=${albumId}`;
     });
   } catch (error) {
     swal({
