@@ -5,12 +5,11 @@ const path = require("path");
 const routes = require("./routes/index");
 const mongoose = require("mongoose");
 const cors = require("cors");
-require("dotenv").config(); // Cargar las variables de entorno desde el archivo .env
 
 
 mongoose
   .connect(
-    "mongodb+srv://johanboca:<password>@cluster0.bfxqi8m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb+srv://johanboca:Juancruz1@cluster0.bfxqi8m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   )
   .then(function (db) {
     console.log("-- Conectado a MongoDB");
