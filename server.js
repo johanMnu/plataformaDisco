@@ -10,9 +10,7 @@ require("dotenv").config(); // Cargar las variables de entorno desde el archivo 
 
 mongoose
   .connect(
-    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${
-      process.env.DB_CLUSTER
-    }.bfxqi8m.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority&appName=Cluster0`
+    "mongodb+srv://johanboca:<password>@cluster0.bfxqi8m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   )
   .then(function (db) {
     console.log("-- Conectado a MongoDB");
