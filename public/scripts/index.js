@@ -11,9 +11,7 @@ document.getElementById("tours").addEventListener("click", () => {
 document.getElementById("logout").addEventListener("click", () => {
   window.location.href = "login.html";
 });
-document.getElementById("login").addEventListener("click", () => {
-  window.location.href = "signUp.html";
-});
+
 
 const getAlbums = async () => {
 

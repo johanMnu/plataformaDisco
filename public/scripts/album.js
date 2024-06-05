@@ -173,8 +173,4 @@ document.getElementById('tours').addEventListener('click', function() {
 document.getElementById('logout').addEventListener('click', function() {
   window.location.href = 'login.html';
 });
-document.getElementById('login').addEventListener('click', function() {
-  window.location.href = 'signUp.html';
-});
-
 
