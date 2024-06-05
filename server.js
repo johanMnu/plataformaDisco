@@ -9,7 +9,7 @@ const cors = require("cors");
 
 mongoose
   .connect(
-    "mongodb+srv://johanboca:Juancruz1@cluster0.bfxqi8m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb+srv://johanboca:Juancruz1@cluster0.bfxqi8m.mongodb.net/Proyecto?retryWrites=true&w=majority&appName=Cluster0"
   )
   .then(function (db) {
     console.log("-- Conectado a MongoDB");
