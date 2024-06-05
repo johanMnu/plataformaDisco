@@ -140,7 +140,7 @@ function renderAlbum(album){
 const deleteSong = async (updatedAlbum) => {
   try {
     const id = updatedAlbum._id;
-    const response = await axios.put(`http://localhost:5000/Album/albumes/${id}`, updatedAlbum);
+    const response = await axios.put(`/Album/albumes/${id}`, updatedAlbum);
     swal("Éxito", "La canción ha sido eliminada correctamente", "success")
       .then(() => {
         window.location.reload();

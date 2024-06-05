@@ -90,7 +90,7 @@ Btn.addEventListener("click", async function(e) {
   }
 
   try {
-      const response = await axios.post("http://localhost:5000/album/albumes", {
+      const response = await axios.post("/album/albumes", {
           titulo: titulo.value,
           descripcion: descripcion.value,
           anio: year.value,
