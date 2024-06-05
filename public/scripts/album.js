@@ -168,9 +168,6 @@ document.getElementById("editAlbum").addEventListener("click", function() {
 document.getElementById('tours').addEventListener('click', function() {
   window.location.href = 'tours.html';
 });
-document.getElementById('addSongs').addEventListener('click', function() {
-  window.location.href = './ADDsongs.html';
-});
 document.getElementById('logout').addEventListener('click', function() {
   window.location.href = 'login.html';
 });
