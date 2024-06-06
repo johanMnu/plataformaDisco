@@ -68,8 +68,8 @@ const validateInputs = (titulo, year, descripcion) => {
   } else if (year.trim() === '' || isNaN(year)) {
       swal("Debes ingresar un año válido", { icon: "error" });
       return false;
-  } else if (parseInt(year) < 2008) {
-      swal("El año debe ser igual o mayor a 2008", { icon: "error" });
+  } else if (parseInt(year) < 1800) {
+      swal("El año debe ser igual o mayor a 1800", { icon: "error" });
       return false;
   }
   return true;
