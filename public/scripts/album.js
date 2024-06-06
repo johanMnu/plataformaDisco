@@ -123,7 +123,7 @@ function renderAlbum(album){
         youtubeIcon.addEventListener('click', () => window.open(cancion.youtubelink, '_blank'));
         songItem.appendChild(youtubeIcon);
         const deleteIcon = document.createElement('span');
-    deleteIcon.innerHTML = '<i class="fa fa-trash text-red-500"></i>';
+    deleteIcon.innerHTML = '<i class="fa fa-trash text-red-500, cursor-pointer"></i>';
     deleteIcon.dataset.songId = cancion._id;
     deleteIcon.addEventListener("click", function() {
       const updatedAlbum = { ...album };
