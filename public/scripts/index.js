@@ -5,7 +5,7 @@ document.getElementById("addAlbum").addEventListener("click", () => {
 });
 
 document.getElementById("tours").addEventListener("click", () => {
-  window.location.href = "Tours.html";
+  window.location.href = "tours.html";
 });
 
 document.getElementById("logout").addEventListener("click", () => {
