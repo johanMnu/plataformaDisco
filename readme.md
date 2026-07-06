@@ -29,7 +29,7 @@ A continuación tenemos el paso a paso de cómo descargar el repositorio y levan
 9_Disfrutar!!
 
 🖊️ Autores y contactos
-Johan Miguel Nuñez Cleto johanboca@hotmail.com 11-3116-6949
+Johan Miguel Nuñez Cleto johanmnu@hotmail.com 11-3116-6949
 
 🎁 Agradecimientos
 Agradezco la oportunidad de poder cursar esta capacitacion y la atencion brindada por los profes Emiliano, Javi y Mauri.
